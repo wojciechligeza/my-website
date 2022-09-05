@@ -1,0 +1,48 @@
+{
+  "name": "my-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "optimize-image": "node src/optimize-image.cjs",
+    "lint": "eslint --quiet .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "1.0.0-beta.3",
+    "@ui5/webcomponents": "^1.7.0",
+    "@ui5/webcomponents-fiori": "^1.7.0",
+    "@ui5/webcomponents-icons": "^1.7.0",
+    "@ui5/webcomponents-react": "^0.27.5",
+    "@ui5/webcomponents-react-charts": "^0.27.5",
+    "classnames": "^2.3.1",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "typeit-react": "^2.6.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.7",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
+  }
+}
