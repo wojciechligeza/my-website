@@ -5,14 +5,16 @@ import '@ui5/webcomponents-icons/dist/navigation-right-arrow'
 export default function Projects() {
   const [collapsed, setCollapsed] = useState(false)
   return (
-    <section className="mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-auto rounded-3xl bg-white px-2 py-4 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
+    <section className="mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-scroll rounded-3xl bg-white p-2 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
       <NotificationListGroupItem
+        style={{ overflow: 'hidden' }}
         titleText={`Projects / Main ${collapsed ? 'technologies' : 'tasks'}`}
         onToggle={() => setCollapsed(prev => !prev)}
       >
         <NotificationListItem priority="Low" titleText="Consalit" wrappingType="Normal" className="text-justify">
           In my current position I am building new functionalities in SAP for German clients, especially in the modules:
-          Sales and Distribution, Materials Management. I also maintain and develop Fiori Javascript Apps.
+          Sales and Distribution, Materials Management.
+          <br />I also maintain and develop Fiori Javascript Apps.
         </NotificationListItem>
         <NotificationListItem priority="Low" titleText="Accenture" wrappingType="Normal" className="text-justify">
           I participated in 3 different projects. During the longest running one(1.5 years), I worked in the Scrum team
