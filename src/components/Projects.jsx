@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { NotificationListGroupItem, NotificationListItem, Text } from '@ui5/webcomponents-react'
+import '@ui5/webcomponents-icons/dist/navigation-right-arrow'
 
 export default function Projects() {
   const [collapsed, setCollapsed] = useState(false)
   return (
-    <section className="mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-auto rounded-3xl bg-white p-2 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
+    <section className="mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-auto rounded-3xl bg-white px-2 py-4 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
       <NotificationListGroupItem
         titleText={`Projects / Main ${collapsed ? 'technologies' : 'tasks'}`}
         onToggle={() => setCollapsed(prev => !prev)}
