@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section className="z-10 mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-scroll rounded-3xl bg-white p-2 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
       <NotificationListGroupItem
-        style={{ borderRadius: '1.5rem', overflow: 'hidden', zIndex: 0 }}
+        style={{ overflow: 'hidden', zIndex: 0 }}
         titleText={`Projects / Main ${collapsed ? 'technologies' : 'tasks'}`}
         onToggle={() => setCollapsed(prev => !prev)}
       >
