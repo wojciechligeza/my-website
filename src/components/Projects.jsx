@@ -5,9 +5,9 @@ import '@ui5/webcomponents-icons/dist/navigation-right-arrow'
 export default function Projects() {
   const [collapsed, setCollapsed] = useState(false)
   return (
-    <section className="mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-scroll rounded-3xl bg-white p-2 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
+    <section className="z-10 mx-4 mt-4 mb-4 h-[208px] w-[328px] overflow-y-scroll rounded-3xl bg-white p-2 shadow-lg scrollbar-hide sm:h-[280px] sm:w-[440px]">
       <NotificationListGroupItem
-        style={{ borderRadius: '1.5rem', overflow: 'hidden' }}
+        style={{ borderRadius: '1.5rem', overflow: 'hidden', zIndex: 0 }}
         titleText={`Projects / Main ${collapsed ? 'technologies' : 'tasks'}`}
         onToggle={() => setCollapsed(prev => !prev)}
       >
