@@ -7,7 +7,7 @@ export default function Contact() {
         role="button"
         className="rounded-xl bg-white p-2 shadow transition duration-300 hover:scale-105 hover:shadow-lg"
       >
-        <a href="mailto:wojciech.ligeza@gmail.com">
+        <a href="mailto:wojciech.ligeza@gmail.com" aria-label="Email">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -25,7 +25,12 @@ export default function Contact() {
         </a>
       </div>
       <div role="button" className="p-2 transition-transform duration-300 hover:scale-110">
-        <a href="https://www.linkedin.com/in/wojciech-lig%C4%99za-9883171a1/" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://www.linkedin.com/in/wojciech-lig%C4%99za-9883171a1/"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="LinkedIn"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 310 310"
@@ -55,7 +60,7 @@ export default function Contact() {
         role="button"
         className="rounded-xl bg-white p-2 shadow transition duration-300 hover:scale-105 hover:shadow-lg"
       >
-        <a href={cv} download="Wojciech's CV">
+        <a href={cv} download="Wojciech's CV" aria-label="CV">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
