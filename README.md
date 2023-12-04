@@ -1,3 +1,3 @@
 # README
 
-This is my [website](https://vercel.com/)!
+This is my [website](https://vercel.com/)
